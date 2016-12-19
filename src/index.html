@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta charset="UTF-8">
+<title>Interactive autism-biomarkers demo</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="../dep/jquery/jquery-ui-1.11.4.custom/jquery-ui.min.css">
+
+  
+<style>
+body{
+  font-family: Helvetica, Arial, "sans-serif";
+}  
+  
+.sliderDiv {
+  margin-bottom: 0.5em;
+  overflow: auto;
+}
+
+.sliderDiv>div {
+  width: 100%;
+  margin-bottom: 0.6em;
+}
+
+.sliderDiv h3{
+	margin-top: 2px;
+	margin-bottom: 6px;
+	font-weight: normal;
+	font-size: 0.75em;
+}
+
+.sliderDiv>div>div {
+  margin-bottom: 0.5em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+#svgHolder {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+ 
+ div.container{
+	width: 100%;
+	max-width: 665px;
+	margin-left: auto;
+	margin-right: auto; 
+}
+ 
+</style>
+
+</head>
+
+<body>
+<div class="wrapper">
+<div class="container">
+
+<h2>Interactive autism-biomarkers demo</h2>
+
+<p>Move the sliders to investigate the effects of changing how well a
+test differentiates between autistic and non-autistic people, the
+cut-off employed, and the prevalence of autism in the population being
+tested.</p>
+
+<div id="sliders" class="sliderDiv">
+	<div id="es">
+    <h3>Effect Size: <span></span></h3>
+      <div></div>
+    </div>
+    <div id="prev">
+      <h3>Prevalence: 1 in <span></span></h3>
+        <div></div>
+    </div>
+    <div id="cut">
+      <h3>Cutoff: <span></span></h3>
+        <div></div>
+    </div>
+</div>
+<div id="svgHolder"></div>
+  <p>Original article: <a href="https://spectrumnews.org/opinion/viewpoint/quest-autism-biomarkers-faces-steep-statistical-challenges/">"Quest for autism biomarkers faces steep statistical challenges"</a> by Jon Brock and Tim Brock for <a href="https://spectrumnews.org/about/">Spectrum</a>.</p>
+</div>
+</div>
+
+<script src="../dep/jquery/jquery-1-11-1.js"></script>
+<script src="../dep/jquery/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script> 
+<script src="../dep/jquery/jquery-ui-touch-punch.js"></script>
+<script src="../dep/d3/d3.min.js"></script> 
+<script src="interactive.js"></script>
+</body>
+</html>
